@@ -29,6 +29,9 @@ node * rev(node *h){
 		a = b;
 		b = b->n;
 	}
+	a->n = c;
+	c = a;
+	return c;
 }
 
 void main(){
